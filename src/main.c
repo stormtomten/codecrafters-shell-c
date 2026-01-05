@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
   // Remove the trailing newline and replace it with a '\0'
   command[strcspn(command, "\n")] = '\0';
 
-  printf("%s command not found\n", command);
+  printf("%s: command not found\n", command);
 
   return 0;
 }
