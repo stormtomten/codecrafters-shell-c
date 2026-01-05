@@ -3,8 +3,7 @@
 
 int main(int argc, char *argv[]) {
 
-  int run = 1;
-  while (run) {
+  while (1) {
     // Flush after every printf
     setbuf(stdout, NULL);
     // TODO: Uncomment the code below to pass the first stage
@@ -16,7 +15,6 @@ int main(int argc, char *argv[]) {
     command[strcspn(command, "\n")] = '\0';
 
     if (command == "exit") {
-      run = 0;
       break;
     }
 
